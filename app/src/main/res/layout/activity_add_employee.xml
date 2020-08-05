@@ -1,123 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center|top"
-    tools:context=".AddEmployeeActivity">
+    android:background="#34E91E63">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="top|center"
-        android:text="Add Employee"
-        android:textColor="#F6071B"
-        android:textSize="35dp"/>
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        tools:context=".AddEmployeeActivity">
 
-    <EditText
-        android:id="@+id/employeeid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter the Employee ID"
-        android:layout_marginTop="20dp"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        android:inputType="text"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="top|center"
+            android:text="Add Employee"
+            android:textColor="#5903F3"
+            android:textSize="35dp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/employeeid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter the Employee ID"
+            android:inputType="text"
+            android:textColor="#090000"
+            android:textSize="23sp"
+            android:textStyle="bold|italic" />
 
         <EditText
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter the Employee Name"
             android:layout_marginTop="20dp"
+            android:hint="Enter the Employee Name"
+            android:inputType="text"
             android:textSize="23sp"
-            android:textStyle="bold|italic"
-            android:inputType="text"/>
-    <EditText
-        android:id="@+id/department"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Department"
-        android:layout_marginTop="20dp"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        android:inputType="text"/>
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Employee Email Id"
-        android:layout_marginTop="20dp"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        android:inputType="textEmailAddress"/>
-    <EditText
-        android:id="@+id/salary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Salary"
-        android:layout_marginTop="20dp"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        android:inputType="text"/>
-    <EditText
-        android:id="@+id/gender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Gender"
-        android:layout_marginTop="20dp"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        android:inputType="text"/>
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Department"
+            android:inputType="text"
+            android:textSize="23sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint=" Email Id"
+            android:inputType="textEmailAddress"
+            android:textSize="23sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Salary"
+            android:inputType="text"
+            android:textSize="23sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Gender"
+            android:inputType="text"
+            android:textSize="23sp"
+            android:textStyle="bold|italic" />
+
         <EditText
             android:id="@+id/age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Employee Age"
             android:layout_marginTop="20dp"
+            android:hint="Employee Age"
+            android:inputType="number"
             android:textSize="23sp"
-            android:textStyle="bold|italic"
-            android:inputType="number"/>
+            android:textStyle="bold|italic" />
 
-    <EditText
-        android:id="@+id/date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Date of Joining(yyyy-mm-dd)"
-        android:layout_marginTop="20dp"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        android:inputType="date"/>
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Date of Joining(yyyy-mm-dd)"
+            android:inputType="date"
+            android:textSize="23sp"
+            android:textStyle="bold|italic" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/add"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginLeft="30dp"
+                android:background="#87F605"
                 android:text="ADD" />
 
             <Button
                 android:id="@+id/clear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
+                android:background="#2196F3"
                 android:text="CLEAR" />
 
         </LinearLayout>
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>

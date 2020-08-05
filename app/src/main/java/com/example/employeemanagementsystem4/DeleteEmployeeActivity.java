@@ -34,6 +34,8 @@ public class DeleteEmployeeActivity extends AppCompatActivity {
                 Integer deleteRows=myDB.deleteData(id3.getText().toString());
                 if(deleteRows!=0){
                     Toast.makeText(DeleteEmployeeActivity.this,"Data Deleted",Toast.LENGTH_LONG).show();
+                    id3.setText("");
+                    name3.setText("");
                 }else{
                     Toast.makeText(DeleteEmployeeActivity.this,"Data Not Deleted",Toast.LENGTH_LONG).show();
                 }

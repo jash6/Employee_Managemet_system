@@ -54,37 +54,37 @@ public class EmployeeInfoActivity extends AppCompatActivity {
 
                 TextView name5 = new TextView(this);
                 name5.setText("" + name4);
-                name5.setWidth(190);
+                name5.setWidth(180);
                 ll.addView(name5);
 
                 TextView department5 = new TextView(this);
                 department5.setText("" + department4);
-                department5.setWidth(200);
+                department5.setWidth(190);
                 ll.addView(department5);
 
                 TextView email5 = new TextView(this);
                 email5.setText("" + email4);
-                email5.setWidth(200);
+                email5.setWidth(300);
                 ll.addView(email5);
 
                 TextView salary5 = new TextView(this);
                 salary5.setText("" + salary4);
-                salary5.setWidth(130);
+                salary5.setWidth(160);
                 ll.addView(salary5);
 
                 TextView gender5 = new TextView(this);
                 gender5.setText("" + gender4);
-                gender5.setWidth(130);
+                gender5.setWidth(150);
                 ll.addView(gender5);
 
                 TextView age5 = new TextView(this);
                 age5.setText("" + age4);
-                age5.setWidth(130);
+                age5.setWidth(100);
                 ll.addView(age5);
 
                 TextView date5 = new TextView(this);
                 date5.setText("" + date_of_joining);
-                date5.setWidth(130);
+                date5.setWidth(200);
                 ll.addView(date5);
 
                 lm.addView(ll);

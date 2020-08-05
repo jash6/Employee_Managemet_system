@@ -49,6 +49,14 @@ public class UpdateEmployeeActivity extends AppCompatActivity {
 
         if(isupdated==true){
             Toast.makeText(UpdateEmployeeActivity.this,"Data Updated",Toast.LENGTH_LONG).show();
+            id2.setText("");
+            name2.setText("");
+            department2.setText("");
+            mail2.setText("");
+            salary2.setText("");
+            gender2.setText("");
+            age2.setText("");
+            date2.setText("");
         }else {
             Toast.makeText(UpdateEmployeeActivity.this,"Data Not Updated",Toast.LENGTH_LONG).show();
         }

@@ -4,42 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BC0F50D1"
     android:orientation="vertical"
     tools:context=".DeleteEmployeeActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:gravity="top|center"
         android:text="Delete Employee"
-        android:textColor="#F6071B"
-        android:textSize="35dp"/>
+        android:textColor="#750101"
+        android:textSize="35dp"
+        android:textStyle="bold|italic" />
 
     <EditText
         android:id="@+id/employeeid3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:hint="Enter the Employee ID"
-        android:layout_marginTop="20dp"
+        android:inputType="text"
         android:textSize="23sp"
-        android:textStyle="bold|italic"
-        android:inputType="text"/>
+        android:textStyle="bold|italic" />
 
     <EditText
         android:id="@+id/name3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:hint="Enter the Employee Name"
-        android:layout_marginTop="20dp"
+        android:inputType="text"
         android:textSize="23sp"
-        android:textStyle="bold|italic"
-        android:inputType="text"/>
+        android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/delete"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="50dp"
+        android:background="#AC0202"
+        android:text="Delete" />
 
 </LinearLayout>

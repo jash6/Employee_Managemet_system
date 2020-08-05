@@ -42,6 +42,14 @@ public class AddEmployeeActivity extends AppCompatActivity {
                 boolean isinserted =myDB.insertData(id.getText().toString(),name.getText().toString(),department.getText().toString(),mail.getText().toString(),Float.parseFloat(salary.getText().toString()),gender.getText().toString(),Integer.parseInt(age.getText().toString()),date.getText().toString());
                 if(isinserted==true){
                     Toast.makeText(AddEmployeeActivity.this,"Data Inserted",Toast.LENGTH_LONG).show();
+                    id.setText("");
+                    name.setText("");
+                    department.setText("");
+                    mail.setText("");
+                    salary.setText("");
+                    gender.setText("");
+                    age.setText("");
+                    date.setText("");
                 }else {
                     Toast.makeText(AddEmployeeActivity.this,"Data Not Inserted",Toast.LENGTH_LONG).show();
                 }
