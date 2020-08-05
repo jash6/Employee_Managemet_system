@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".AddEmployeeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="top|center"
+        android:text="Add Employee"
+        android:textColor="#F6071B"
+        android:textSize="35dp"/>
+
+    <EditText
+        android:id="@+id/employeeid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Employee ID"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Employee Name"
+            android:layout_marginTop="20dp"
+            android:textSize="23sp"
+            android:textStyle="bold|italic"
+            android:inputType="text"/>
+    <EditText
+        android:id="@+id/department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Department"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Email Id"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Salary"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gender"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:inputType="text"/>
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Employee Age"
+            android:layout_marginTop="20dp"
+            android:textSize="23sp"
+            android:textStyle="bold|italic"
+            android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Joining(yyyy-mm-dd)"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:inputType="date"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="ADD" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:text="CLEAR" />
+
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>
